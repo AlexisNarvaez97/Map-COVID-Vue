@@ -69,10 +69,8 @@ export default {
       const data = await this.getData();
       const map = this.map;
       const popup = this.popup;
-      console.log(data);
 
       data.forEach(item => {
-        console.log(item);
         if (item.confirmed > 0) {
           // eslint-disable-next-line no-unused-vars
           const marker = new this.google.maps.Marker({
